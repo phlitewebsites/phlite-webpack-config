@@ -2,7 +2,7 @@ var path = require('path');
 var glob = require('glob');
 var webpack = require('webpack');
 
-var rootPath = path.resolve(__dirname, '..');
+var rootPath = path.resolve(__dirname, '../..');
 
 var uglifyOptions = {
   minimize: true,
