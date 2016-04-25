@@ -26,6 +26,12 @@ module.exports = {
     path: rootPath + '/public/js',
     filename: '[name].js'
   },
+  resolve: {
+    alias: {
+      jquery: path.resolve(rootPath, 'src/scripts/lib/jquery.js')
+    },
+    extensions: [ '', '.js' ]
+  },
   plugins: [
     new webpack.DefinePlugin({'process.env': {NODE_ENV: JSON.stringify('production')}}),
     new webpack.optimize.OccurenceOrderPlugin(),
